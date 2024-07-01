@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>window</title>
+	<style>
+	body{
+		background-color:#313131;
+		color: white;
+		text-shadow: 0 0 4px aqua;
+		font-size: 25px;
+	}
+	
+	h1{
+		text-shadow: 0 0 8px ligtblue;
+	}
+	
+	button {
+		 padding: 1.3em 3em;
+		 font-size: 12px;
+		 color: #000;
+		 background-color: #fff;
+		 border: none;
+		 border-radius: 45px;
+		 box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+		 transition: all 0.3s ease 0s;
+		 cursor: pointer;
+		 outline: none;
+		}
+
+	button:hover {
+		 background-color: #2EE59D;
+		 box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+		 color: #fff;
+		 transform: translateY(-7px);
+		}
+
+	button:active {
+		 transform: translateY(-1px);
+		}
+	</style>
+</head>
+<body>
+	<center>
+	<h1><u>Window</u></h1><br>
+	<p>Click the button to open a new browser window.</p>
+	<button onclick="myFunction1()" id="btn">Try it</button><br>
+	<p>Click the button to display an alert box.</p>
+	<button onclick="myFunction2()" id="btn">Try it</button><br>
+	<p>Click the button to display a dialog box which will ask for your name.</p>
+	<button onclick="myFunction3()" id="btn">Try it</button>
+	<p id="demo"></p>
+	</center>
+	<script>
+	function myFunction1() {
+	  window.open("https://www.google.com");
+	}
+	function myFunction2() {
+	  alert("Hello! I am an alert box!");
+	}
+	function myFunction3() {
+	  var name = prompt("What's your Name?", "Aaftab Patel");
+	  document.getElementById("demo").innerHTML = "Name is:" + name;
+	}
+	</script>
+
+</body>
+</html>

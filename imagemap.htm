@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>image maps</title>
+<style>
+	*{
+		background-color:aqua;
+	}
+	h1{
+		 color:red;
+	}
+</style>
+</head>
+<body>
+	<center>
+	<h1><u>IMAGE MAPS</u></h1>
+	<p>Click on the cup of coffee/laptop/mobile to go to a new page and read more about the topic:</p>
+
+	<img src="D:\3rd sem\web pogramming\html programms\image\workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+	<map name="workmap">
+		<area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+		<area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+		<area shape="poly" coords="291,174,329,173,335,246,294,247" alt="mobile" href="mobile.htm">	
+	</map>
+</center>
+</body>
+</html>
+

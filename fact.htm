@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>simple intrest</title>
+	<style>
+		h1{color:white;
+			background-color:black;
+		}
+		input{
+			border:2px solid red;
+		}
+		#res{
+			border:2px solid red;
+			width:180px;
+			height:15px;
+			background-color:white;
+			color:grey;
+		}
+		
+	</style>
+</head>
+<body bgcolor="aqua">
+	<center>
+	<div class="box">
+	<h1><u>fact</u></h1>	
+	<form>	
+	<label for="first"></label>
+	<input type="text" name="p" id="num" placeholder="Enter "> <br>
+	</div></form>
+	<button onclick = "fact()" >Calculate</button>
+	
+	
+	<script>
+	function fact(){  
+	var i, num, f;  
+	f = 1;  
+	num = document.getElementById("num").value;  
+	for(i = 1; i <= num; i++)    
+	{  
+	f = f * i;  
+	}  
+	
+	document.getElementById("res").innerHTML = f ;  
+	}  
+	</script>
+	<div id="res">... here </div>
+	
+	</center>
+</body>
+</html>

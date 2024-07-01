@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>transform</title>
+<style>
+	body{
+		background-size:100%;
+	}
+	div {
+		width: 400px;
+		height: 150px;
+		background-color: powderblue;
+		border: 1px solid black;
+		overflow:scroll;
+	}
+	h1{
+		background-color:white;
+		color:red;
+	}
+	div#myDiv1:hover {
+		transform: matrix(1, -0.2, 0, 1, 0, 0); /* Standard syntax */
+		background-color:red;
+	}
+
+	div#myDiv2:hover {
+		transform: matrix(1, 0, 0.4, 1, 150, 0); 
+		background-color:yellow;
+	}
+</style>
+</head>
+<body background="D:\3rd sem\web pogramming\html programms\image\bg5.jpg">
+	
+	<center>
+	<h1>The Transform Property</h1>
+
+	<div>
+	This a normal div element.
+	</div>
+
+	<div id="myDiv1">
+	Using the matrix() method.(
+	<br>matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()))
+	</div>
+
+	<div id="myDiv2">
+	Another use of the matrix() method.
+	<br>(matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()))
+	</div>
+	</center>
+</body>
+</html>

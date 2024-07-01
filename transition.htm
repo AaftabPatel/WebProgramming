@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	body{
+		background-size:100%;
+	}
+	div {
+	width: 150px;
+	height: 150px;
+	background: red;
+	transition: width 2s, height 2s, transform 2s;
+	animation-name:box;
+	animation-duration: 8s;
+    animation-iteration-count: infinite;
+	}
+
+	div:hover {
+	  width: 350px;
+	  height: 350px;
+	  transform: rotate(180deg);
+	  box-shadow: 5px 10px black;
+	}
+	@keyframes box {
+		0%   {background-color:red;}
+		25%  {background-color:yellow;}
+		50%  {background-color:blue;}
+		75%  {background-color:green;}
+		100% {background-color:red;}
+	}
+	h1,p{
+		color:white;
+	}
+	</style>
+</head>
+<body background="D:\3rd sem\web pogramming\html programms\image\bg7.jpg">
+	<center>
+	<h1>//Transition + Transform  + Animation//</h1>
+
+	<p>Hover over the box below:</p>
+	
+	<div></div>
+	</center>
+</html>

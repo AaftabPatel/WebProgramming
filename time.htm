@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>time</title>
+	<style>
+	body{
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+	h1{
+	 color:white;
+	}
+	div{
+		 align-items: center;
+		 background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+		 border: 0;
+		 font-family: "Times New Roman", serif;
+		 border-radius: 8px;
+		 box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+		 box-sizing: border-box;
+		 color: #FFFFFF;
+		 font-size: 30px;
+		 justify-content: center;
+		 line-height: 2em;
+		 width:800px;
+		 padding: 3px;
+	}
+	</style>
+</head>
+<body  background="D:\3rd sem\web pogramming\html programms\image\time.jpg">
+	<center>
+	<h1><u>Current Day & Time</u></h1>
+	<div id="time">
+		<script>
+			setInterval(showTime, 1000);
+			function showTime() {
+				let time = new Date();
+				let hour = time.getHours();
+				let min = time.getMinutes();
+				let sec = time.getSeconds();
+				const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+				let day = time.getDay();
+				am_pm = "AM";
+			  
+				if (hour > 12) {
+					hour -= 12;
+					am_pm = "PM";
+				}
+				if (hour == 0) {
+					hr = 12;
+					am_pm = "AM";
+				}
+			  
+				hour = hour < 10 ? "0" + hour : hour;
+				min = min < 10 ? "0" + min : min;
+				sec = sec < 10 ? "0" + sec : sec;
+			  
+				let currentTime = days[day] + " , "+ hour + " : " + min + " : " + sec + " " + am_pm;
+			  
+				document.getElementById("time").innerHTML = currentTime;
+			}
+			showTime();
+		</script>
+	</div>
+	</center>
+</body>
+</html>

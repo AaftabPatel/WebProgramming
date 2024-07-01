@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>animation</title>
+<style> 
+	body{
+		background-color:aqua;
+	}
+	div {
+	  background-color: red;
+	  color:white;
+	  border: 2px solid white;
+	  position: fixed;
+	  bottom: 100px;
+	  left: 100px;
+	  top:100px;
+	  width: 400px;
+	  height:250px;
+	  position: relative;
+	  font-size:20px;
+	  animation-name: div1;
+	  animation-duration: 10s;
+	  animation-timing-function: linear;
+	  animation-delay: 2s;
+	  animation-iteration-count: 1;
+	}
+	h1{
+		
+		color:red;
+	}
+
+	@keyframes div1 {
+		from {background-color: red;}
+		to {background-color: green; width:800px; height:500px; font-size:40px;}
+	}
+</style>
+</head>
+<body>
+	<center>
+	<H1><u>ANIMATION IN HTML</u><H1>
+	<div>An animation lets an element gradually change from one style to another.
+	You can change as many CSS properties you want, as many times as you want.
+	To use CSS animation, you must first specify some keyframes for the animation.
+	Keyframes hold what styles the element will have at certain times.</div>
+	</center>
+</body>
+</html>

@@ -1,0 +1,45 @@
+ <!DOCTYP html>
+<html>
+<head>
+	<title>Selector</title>
+	<style>
+		body{
+			background-image: linear-gradient(to bottom right, rgb(0,255,255), rgba(0,255,255,0.3) , white);
+		}
+		h1{
+			color:red;
+			font-size:50px;
+		}
+		p,span{
+			font-size:20px;
+		}
+		#d1>.myclass+p{
+			background-color:yellow;
+			}  
+		span~.class1:hover{ 
+            color: white;
+			background-color:red;
+			border:2px solid white;
+		}
+	</style>
+</head>
+<body>
+	<h1><u>Some of the advantages of using CSS are:</u></h1>
+
+	<div id="d1">
+		<p class="myclass">1. More formatting options.</p>
+		<p class="myclass">2. Easier to maintain and update.</p>
+		<p>3. Greater consistency in design.</p>
+	</div>
+	
+	<span>4. Lightweight code.</span>
+	<p class="class1">5. Faster download times.</p>
+	<p class="class1">6. Search engine optimization benefits.</p>
+	<p class="class1">7. Ease of presenting different styles to different viewers.</p>	
+	<p class="class1">8. Greater accessibility.</p>
+	
+	
+</body>
+</html>
+
+    

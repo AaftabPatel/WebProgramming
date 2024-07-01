@@ -1,0 +1,58 @@
+*{
+	font-family:times;
+}
+body{font-size:18px;}
+
+div.main{
+	background-color:#FFBF00;
+	position:absolute;
+	left:0%;
+	top:0;
+	width:19.99%;
+	color:black;
+}
+div.c2{
+	position:absolute;
+	left:20%;
+	top:0;
+	height:162%;
+	margin-left:2px;
+	background-color:cream;
+	color:black;
+	background-image:url('https://st4.depositphotos.com/1000435/27991/v/450/depositphotos_279910850-stock-illustration-dynamic-shape-background-with-wave.jpg');
+	background-size: contain;
+}
+h2.cl{
+	background-color:yellow;
+	color:black;
+	padding:2px;
+}
+h2.cl:hover{
+	background-color:black;
+	color:white;
+	transition: color:2s; background-color:2s;
+}
+img.icon{
+	border-radius:45%;
+	width:18px;
+	height:18px;
+}
+hr{
+	border:2px solid yellow;
+}
+
+#mypic{
+	border:1px solid white;
+	border-radius:45%;
+	width:180px;
+	height:180px;
+	margin-left:20px;
+	transition: width 1s, height 1s;
+}
+#mypic:hover{
+	border:1px solid white;
+	border-radius:0%;
+	width:220px;
+	height:220px;
+	margin-left:9px;
+}

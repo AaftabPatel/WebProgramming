@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>simple intrest</title>
+	<style>
+	body{
+		background-color: #202020;
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+	div.box{
+		align-items: center;
+		background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+		margin-top:150px;
+		border: 0;
+		border-radius: 8px;
+		box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+		box-sizing: border-box;
+		color: #FFFFFF;
+		font-family: Phantomsans, sans-serif;
+		font-size: 18px;
+		justify-content: center;
+		line-height: 2em;
+		width:500px;
+		padding: 3px;
+	}
+	
+	#num, #num1{
+		font-size: 18px;
+		padding:5px;
+		color:white;
+	}
+	button {
+			width: 100px;
+			height: 30px;
+			border: 0;
+			box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+			border-radius: 50px;
+			background-color: rgba(0,0,0,0.6);
+			color: white;
+			font-family: "Times New Roman", serif;
+			cursor: pointer;
+			outline: none;
+		}
+		
+	</style>
+</head>
+<body>
+	<center>
+	<div class="box">
+	<h1><u>SIMPLE INTREST</u></h1>	
+	<form>	
+	<label for="first">Principal Amount:</label>
+	<input type="text" name="p" id="first" placeholder="Enter principal"> <br>
+	<label for="second">Time(in Year):</label>
+	<input type="text" name="t" id="second" placeholder="Enter time period "><br>
+	<label for="third">Rate of Interest:</label>
+	<input type="text" name="r" id="third" placeholder="Enter rate of interest(%)"><br>
+	<button type="reset" value="reset">Clear</button> 
+	</form>
+	<button onclick = "simple_interest()" >Calculate</button>
+	</div>
+	
+	<script>
+	function simple_interest()
+		{
+		var p,t,r,si,ci;
+		p = document.getElementById ("first").value;
+		t = document.getElementById ("second").value;
+		r = document.getElementById ("third").value;
+		si = parseInt((p*t*r)/100 );
+		document.getElementById ('num').innerHTML ="Simple Interest : "+si;
+		}
+	</script>
+	<div id="num"> </div>
+	
+	</center>
+</body>
+</htm	l>
